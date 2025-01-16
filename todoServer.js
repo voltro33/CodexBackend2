@@ -162,8 +162,12 @@ let html = `
 `;
 
 
+const keyy = process.env.turnKey;
+console.log('API Key:', keyy);
+
+
 const openai = new OpenAI({
-  apiKey: process.env.turnKey, 
+  apiKey: keyy, 
 });
 
 app.post('/generate', async (req, res) => {
