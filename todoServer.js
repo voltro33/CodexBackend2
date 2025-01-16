@@ -162,12 +162,11 @@ let html = `
 `;
 
 
-const keyy = turnKey;
-console.log('API Key:', keyy);
 
-//You won't find the API key buddy. Good try
+
+//You won't find the API key buddy.
 const openai = new OpenAI({
-  apiKey: turnKey, 
+  apiKey: process.env.turnKey, 
 });
 
 app.post('/generate', async (req, res) => {
