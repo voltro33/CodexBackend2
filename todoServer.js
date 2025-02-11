@@ -177,7 +177,7 @@ const {idea} = req.body;
 
   try {
     const completion = await openai.chat.completions.create({
-      model: 'gpt-3o-mini', //changed jt from 'gpt-4o' to 'o3-mini'
+      model: 'gpt-4o', //changed jt from 'gpt-4o' to 'o3-mini'
       messages: [
         {
           role: 'system',
